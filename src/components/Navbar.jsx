@@ -1,12 +1,24 @@
 import React, { useState } from "react";
+import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // Import the CSS file for styling
+import "./Navbar.css";
 
 const Navbar = () => {
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
   const toggleProfileMenu = () => {
     setShowProfileMenu(!showProfileMenu);
+  };
+  const [language, setLanguage] = useState("English");
+  const [profileOpen, setProfileOpen] = useState(false);
+  const [libraryOpen, setLibraryOpen] = useState(false);
+
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value);
+  };
+
+  const toggleLibraryMenu = () => {
+    setLibraryOpen(!libraryOpen);
   };
 
   return (
@@ -22,20 +34,32 @@ const Navbar = () => {
         </Link>
         <div className="navbar-links">
           <Link to="/">Home</Link>
-          <Link to="/MyPujaBookings">Puja</Link>
+          <Link to="/my-puja-bookings">Puja</Link>
           <Link to="/panchang">Panchang</Link>
           <Link to="/temples">Temples</Link>
           <Link to="/library">Library</Link>
         </div>
-        <div className="profile-icon" onClick={toggleProfileMenu}>
-          Profile
-        </div>
+        <select
+          className="language-dropdown"
+          value={language}
+          onChange={handleLanguageChange}
+        >
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+        </select>
+
+        <FaUserCircle
+          className="profile-icon"
+          title="Profile icon"
+          onClick={toggleProfileMenu}
+        />
       </div>
+
       {showProfileMenu && (
         <div className="profile-menu">
           <ul>
             <li>
-              <Link to="/my-profile">My Profile</Link>
+              <Link to="/my-profile"></Link>
             </li>
             <li>
               <Link to="/my-puja-bookings">My Puja Bookings</Link>

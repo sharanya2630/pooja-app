@@ -18,7 +18,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './PoojaCard.css'; // Import the CSS file for styling
+import './PoojaCard.css'; 
 
 const PoojaCard = ({ pooja }) => {
   return (

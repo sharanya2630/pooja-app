@@ -1,83 +1,84 @@
 /* Card container styling */
+
 .pooja-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 1rem;
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  /* Card header styling */
-  .card-header {
-    position: relative;
-  }
-  
-  .card-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .card-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Card body styling */
-  .card-body {
-    padding: 1rem;
-  }
-  
-  .pooja-name {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .pooja-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .pooja-info {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .pooja-location, .pooja-date {
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
-  /* Card footer styling */
-  .card-footer {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .participate-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .participate-button:hover {
-    background-color: #45a049;
-  }
-  
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 1rem;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card header styling */
+.card-header {
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Card body styling */
+.card-body {
+  padding: 1rem;
+}
+
+.pooja-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.pooja-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.pooja-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.pooja-location,
+.pooja-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Card footer styling */
+.card-footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+.participate-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.participate-button:hover {
+  background-color: #45a049;
+}
